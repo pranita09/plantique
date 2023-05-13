@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+.nav-left{
+    grid-area: logo;
+}
+.nav-left .app-name{
+    font-size: 1.8rem;
+    font-family: 'Bree Serif', serif;
+}
+.nav-search{
+    grid-area: search;
+    width: 1fr;
+    padding: 0.2rem;
+    margin: 0.5rem;
+    border: 1px solid;
+    border-radius: 5px;
+    display: flex;
+}
+.nav-search input{
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-left: 0.5rem;
+    background-color: var(--secondary-color);
+}
+.nav-right{
+    grid-area: icons;
+    justify-self: end;
+    display: flex;
+    align-items: center;
+}
+.nav-right .nav-icon{
+    padding: 0.5rem;
+    align-self: center;
+    /* color: lightgray; */
+}
+.navbar{
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-color);
+    display: grid;
+    /* justify-items: center; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "logo icons"
+        "search search";
+}
+@media (min-width: 768px){
+    .navbar{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "logo search icons";
+    }
+    .nav-left .app-name{
+        font-size: 2rem;
+    }
+    .nav-right .nav-icon{
+        padding: 0.5rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+    }
+    .nav-icon:hover{
+        background-color: lightgrey;
+    }
+}
+@media (min-width: 1028px){
+    .navbar{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "logo search icons";
+    }
+    .nav-left .app-name{
+        font-size: 2rem;
+    }
+    .nav-right .nav-icon{
+        padding: 0.7rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+    }
+    .nav-icon:hover{
+        background-color: lightgrey;
+    }
+}

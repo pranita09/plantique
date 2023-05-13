@@ -1,4 +1,32 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
+.App {
+  /* text-align: center; */
+}
+.secondary-btn{
+  border: none;
+  outline: 2px solid green;
+  color: green;
+  background-color: none;
+}
+.secondary-btn:hover{
+  border: none;
+  color: white;
+  background-color: green;
+  cursor: pointer;
+}
+.primary-btn{
+  border: none;
+  color: white;
+  background-color: green;
+}
+.primary-btn:hover{
+  outline: 2px solid green;
+  color: green;
+  background-color: lightgreen;
+  cursor: pointer;
+}
+
 
