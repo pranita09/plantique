@@ -32,13 +32,21 @@
 .nav-right .nav-icon{
     padding: 0.5rem;
     align-self: center;
-    /* color: lightgray; */
+    position: relative;
+}
+.nav-icon p{
+    position: absolute;
+    padding: 0 0.2rem;
+    border-radius: 50%;
+    top: 0;
+    left: 1.2rem;
+    background-color: var(--primary-color);
+    color: white;
 }
 .navbar{
     padding: 0.5rem 1rem;
     background-color: var(--secondary-color);
     display: grid;
-    /* justify-items: center; */
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
         "logo icons"
@@ -62,6 +70,7 @@
     }
     .nav-icon:hover{
         background-color: lightgrey;
+        cursor: pointer;
     }
 }
 @media (min-width: 1028px){
@@ -82,5 +91,9 @@
     }
     .nav-icon:hover{
         background-color: lightgrey;
+        cursor: pointer;
+    }
+    .nav-icon P{
+        left: 1.5rem;
     }
 }

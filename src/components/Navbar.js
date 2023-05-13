@@ -17,10 +17,20 @@ const Navbar = () =>{
                     <input placeholder='Search'/>
                 </div>
                 <div className='nav-right'>
-                    <div className='nav-icon'><LocalMallOutlinedIcon/></div>
-                    <div className='nav-icon'><AccountCircleOutlinedIcon/></div>
-                    <div className='nav-icon'><FavoriteBorderOutlinedIcon/></div>
-                    <div className='nav-icon'><ShoppingCartOutlinedIcon/></div>
+                    <div className='nav-icon'>
+                        <LocalMallOutlinedIcon/>
+                    </div>
+                    <div className='nav-icon'>
+                        <AccountCircleOutlinedIcon/>
+                    </div>
+                    <div className='nav-icon'>
+                        <FavoriteBorderOutlinedIcon/>
+                        <p>0</p>
+                    </div>
+                    <div className='nav-icon'>
+                        <ShoppingCartOutlinedIcon/>
+                        <p>0</p>
+                    </div>
                 </div>
             </div>
         </>
