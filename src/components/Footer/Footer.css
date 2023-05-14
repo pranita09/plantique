@@ -11,11 +11,17 @@
     font-size: 1.8rem;
     font-family: 'Bree Serif', serif;
 }
- p{
+.footer p{
     padding: 0.25rem 0;
+    font-size: small;
 }
 .title{
     font-weight: bold;
+}
+.listItems{
+    display: flex;
+    gap: 2rem;
+    /* align-items: start; */
 }
 @media(min-width: 768px){
     .footer{
@@ -27,5 +33,13 @@
         padding: 2rem 2rem 1rem 2rem;
         flex-direction: row;
         justify-content: space-evenly;
+    } 
+    .footer p{
+        font-size: medium;
+    }
+    .listItems{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
     }
 }

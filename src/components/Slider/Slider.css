@@ -20,6 +20,7 @@
     border: none;
     background-color: var(--ternary-color);
     color: white;
+    cursor: pointer;
 }
 @media(min-width: 768px){
     .slider-container{
@@ -37,6 +38,7 @@
         font-size: 1rem;
         color: white;
     }
+    
 }
 @media(min-width: 1024px){
     .slider-container{
@@ -53,5 +55,10 @@
         left: 38rem;
         font-size: 1rem;
         color: white;
+    }
+    .slider-btn:hover{
+        background-color: var(--primary-color);
+        transition: 0.4s;  
+        color: black;  
     }
 }

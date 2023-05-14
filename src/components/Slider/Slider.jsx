@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
 import './Slider.css'
 
 const slides = [
@@ -12,7 +13,7 @@ function Slider() {
     return (
       <div className='slider-container'>
           <img src={slides[2]} alt='banner'/>
-          <button className='slider-btn'>Shop Now</button>
+          <Link to='/store'><button className='slider-btn'>Shop Now</button></Link>
       </div>
    )
 }
