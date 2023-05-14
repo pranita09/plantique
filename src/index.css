@@ -16,7 +16,7 @@ code {
 :root{
   --primary-color: #4c934c;
   --secondary-color: #f5dbcb;
-  --ternary-color: #00635D;
+  --ternary-color: #1b4b33;
 }
 *{
   box-sizing: border-box;
