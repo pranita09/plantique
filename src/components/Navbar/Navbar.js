@@ -10,6 +10,7 @@ const Navbar = () =>{
         <>
             <div className='navbar'>
                 <div className='nav-left'>
+                    <img src='/images/logo-img.png' alt='Plantique-logo'/>
                     <span className='app-name'>Plantique</span>
                 </div>
                 <div className='nav-search'>
